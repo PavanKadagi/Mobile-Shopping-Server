@@ -11,7 +11,7 @@ const app = express();
 app.use(cookieParser())
 app.use(express.json())
 app.use(cors({
-    origin:["http://localhost:3000","http://127.0.0.1:3000",process.env.CLIENT_URL],
+    origin:["http://localhost:3000","http://127.0.0.1:3000","https://mobile-shopping.onrender.com"],
     optionsSuccessStatus: 200,
     credentials:true,
     methods:["GET","PUT","PATCH","POST","DELETE","OPTIONS"],
